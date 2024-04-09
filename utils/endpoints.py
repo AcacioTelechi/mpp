@@ -1,0 +1,5 @@
+TEMAS = "referencias/proposicoes/codTema"
+PROPOSICAO = "proposicoes"
+PROPOSICAO_DETALHES = "/proposicoes/{id_prop}"
+PROPOSICAO_TEMAS = "/proposicoes/{id_prop}/autores"
+PROPOSICAO_TEMAS = "/proposicoes/{id_prop}/temas"
