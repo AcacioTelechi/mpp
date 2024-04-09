@@ -14,7 +14,7 @@ DATE_FORMAT = os.getenv('DATE_FORMAT')
 PROPS_FOLDER = os.getenv('PROPS_FOLDER')
 PROPS_AUTHORS_FOLDER = os.getenv('PROPS_AUTHORS_FOLDER')
 PROPS_TOPICS_FOLDER = os.getenv('PROPS_TOPICS_FOLDER')
-TIMEDELTA = os.getenv('TIMEDELTA')
+TIMEDELTA = int(os.getenv('TIMEDELTA'))
 
 
 date_init = datetime.date(1988, 1, 1)
@@ -59,7 +59,7 @@ while True:
     pbar2.reset()
 
     date_init = date_end + datetime.timedelta(1)
-    date_end = date_init + datetime.timedelta(TIMEDELTA)
+    date_end = date_init + datetime.timedelta(int(TIMEDELTA))
 
     pbar.update(TIMEDELTA)
 
